@@ -28,7 +28,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**  
    Open your terminal and run the following command to clone the repository:\
-   git clone https://github.com/ham86lv/chatgtp-chat\
+   git clone https://github.com/ham86lv/chatgtp-chat \
    cd chatgtp-chat
 2. **Install dependencies**
    After cloning the repo, install the required dependencies by running:\
