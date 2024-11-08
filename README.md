@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Chat GPT - Test task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Chat GPT is a chat application that allows users to ask questions and receive answers from the ChatGPT model or a mock API. The app features:
+- An interactive interface where users can enter queries and get answers.
+- Integration with the ChatGPT API for generating responses (or a mock API for development).
+- Auto-scrolling to the latest message.
+- Error handling if the API request fails.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User-friendly interface**: Clean and responsive design using Ant Design components.
+- **Real-time interaction**: Users can send questions and get answers instantly.
+- **Mock API**: During development, the responses are simulated using a mock API.
+- **Scroll to the latest message**: Messages automatically scroll to the most recent one.
+- **Error handling**: A friendly error message is displayed if there’s an issue with the API request.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation and Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Make sure you have the following installed:
+- **Node.js** (version 16 or later) — a JavaScript runtime for building and running the app.
+- **npm** or **yarn** — package managers for installing dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Run
 
-### `npm run build`
+1. **Clone the repository**  
+   Open your terminal and run the following command to clone the repository:
+   git clone https://github.com/ham86lv/chatgtp-chat
+   cd chatgtp-chat
+2. **Install dependencies**
+   After cloning the repo, install the required dependencies by running:
+   npm install
+3. **Run the development server**
+   To start the app in development mode, run:
+   npm run start:dev
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Building for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **To build the app for production, run:
+   npm run build
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### API Configuration
+  **To work with the actual ChatGPT API, you need an API key from OpenAI. You can configure it in the API configuration file**
+  **API configuration file:**
+1.  Open the chat.ts file in the api folder.
+2.  Replace the CHAT_GPT_API_KEY variable with your actual OpenAI API key.
