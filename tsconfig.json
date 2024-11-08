@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Вибирає стандарт JavaScript, на який буде компілюватись код
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], // Вибирає бібліотеки, які будуть доступні у проєкті
+    "allowJs": true, // Дозволяє використовувати JavaScript файли разом із TypeScript
+    "skipLibCheck": true, // Пропускає перевірку типів у бібліотеках
+    "esModuleInterop": true, // Забезпечує сумісність з ES модулями
+    "allowSyntheticDefaultImports": true, // Дозволяє імпортувати дефолтні експорти з модулів без дефолтного експорту
+    "strict": true, // Включає сувору перевірку типів
+    "forceConsistentCasingInFileNames": true, // Забезпечує однаковий регістр літер у назвах файлів
+    "module": "ESNext", // Вибирає тип модулів (ESNext для модульного імпорту)
+    "moduleResolution": "Node", // Використовує Node.js стиль для пошуку модулів
+    "resolveJsonModule": true, // Дозволяє імпортувати файли JSON
+    "isolatedModules": true, // Забезпечує ізоляцію модулів
+    "noEmit": true, // Забороняє компіляцію файлів у вихідні файли .js
+    "jsx": "react-jsx", // Вказує, що використовувати JSX синтаксис для React
+    "baseUrl": "./", // Базовий шлях для абсолютних імпортів
+    "paths": {
+      "@/*": ["src/*"] // Шлях для короткого імпорту з папки src
+    }
+  },
+  "include": ["src/**/*"], // Включає файли з папки src для компіляції
+  "exclude": ["node_modules", "dist"] // Виключає папки, які не потрібно компілювати
+}
